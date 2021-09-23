@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="side-panel">
+    <app-side-nav></app-side-nav>
+  </div>
+  <div class="projects">
+    <div class="top">
+      <h2>Projects</h2>
+      <button class="refresh-button" (click)="onRefresh()">REFRESH</button>
+    </div>
+    <app-project-card *ngFor="let project of projects"
+      [project]="project"
+    ></app-project-card>
+    <app-ha-project-card *ngFor="let project of haProjects"
+      [project]="project"
+    ></app-ha-project-card>
+  </div>
+</div>

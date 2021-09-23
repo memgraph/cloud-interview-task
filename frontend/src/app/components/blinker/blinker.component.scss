@@ -1,0 +1,49 @@
+@import "~src/colors";
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba($brand-white, 0);
+  }
+  100% {
+    transform: scale(0.9);
+    box-shadow: 0 0 0 0 rgba($brand-white, 0);
+  }
+}
+
+.circle {
+  border-radius: 50%;
+  width: 0.8rem;
+  height: 0.8rem;
+  opacity: 1;
+}
+
+.error-state {
+  background-color: $brand-red;
+  box-shadow: 0 0 0 0 rgba($brand-red, 0.5);
+}
+
+.running-state {
+  background-color: $brand-green;
+  box-shadow: 0 0 0 0 rgba($brand-green, 0.5);
+}
+
+.stopped-state {
+  background-color: $brand-orange;
+  box-shadow: 0 0 0 0 rgba($brand-orange, 0.5);
+}
+
+.deleted-state {
+  background-color: $brand-gray;
+  box-shadow: 0 0 0 0 rgba($brand-gray, 0.5);
+}
+
+.blinking {
+  -webkit-animation: pulse 1.5s infinite;
+  -moz-animation: pulse 1.5s infinite;
+  -o-animation: pulse 1.5s infinite;
+  animation: pulse 1.5s infinite;
+}

@@ -1,0 +1,51 @@
+@import "~src/colors";
+
+.container {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 100vh;
+
+  .side-panel {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    background-color: $brand-light;
+  }
+
+  .users {
+    display: flex;
+    flex-direction: column;
+    background-color: $brand-silver;
+    width: 100%;
+    padding: 1rem 3rem;
+
+    .top {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      h2 {
+        color: $brand-anthracite;
+      }
+
+      .refresh-button {
+        width: 9rem;
+        height: 2.2rem;
+        right: 6rem;
+        top: 11.25rem;
+        color: $brand-white;
+        background-color: $brand-red;
+        border-radius: 4px;
+        border: 0px solid $brand-silver;
+        font-weight: bold;
+        cursor: pointer;
+        transition: box-shadow 0.1s linear;
+      }
+      .refresh-button:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+}

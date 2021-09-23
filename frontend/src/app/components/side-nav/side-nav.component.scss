@@ -1,0 +1,22 @@
+@import "~src/colors";
+
+.side-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  > .nav-tab {
+    width: 6rem;
+    padding: 0.5rem;
+    color: $brand-anthracite;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    align-items: center;
+    cursor: pointer;
+  }
+  > .nav-tab.is-active {
+    color: $brand-red;
+    border-bottom: 3px solid $brand-red;
+  }
+}

@@ -1,0 +1,19 @@
+<div class="card">
+  <app-blinker [state]="project.state"></app-blinker>
+  <h4>{{project.name}}</h4>
+  <div style="width: 20rem; display: flex; flex-direction: column;">
+    <div class="ha-regions">
+      <app-blinker [state]="project.states[0]"></app-blinker>
+      <h4>{{project.regions[0]}}</h4>
+    </div>
+    <div class="ha-regions">
+      <app-blinker [state]="project.states[1]"></app-blinker>
+      <h4>{{project.regions[1]}}</h4>
+    </div>
+    <div class="ha-regions">
+      <app-blinker [state]="project.states[2]"></app-blinker>
+      <h4>{{project.regions[2]}}</h4>
+    </div>
+  </div>
+  <button (click)="deleteProject()">DELETE</button>
+</div>

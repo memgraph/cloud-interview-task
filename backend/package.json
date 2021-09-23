@@ -1,0 +1,39 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/server.ts",
+    "eslint": "npx eslint -c .eslintrc.js './{src,test,scripts}/**/*.ts'",
+    "eslint:fix": "npx eslint -c .eslintrc.js --fix './{src,test,scripts}/**/*.ts'",
+    "build": "tsc && npm run eslint",
+    "build:prod": "tsc -p tsconfig.build.json"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "express-handlebars": "^3.1.0",
+    "unique-names-generator": "^4.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^11.13.4",
+    "@typescript-eslint/eslint-plugin": "^4.16.1",
+    "@typescript-eslint/parser": "^4.16.1",
+    "eslint": "^7.21.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-jest": "^24.1.9",
+    "eslint-plugin-prettier": "^3.3.1",
+    "gts": "^3.1.0",
+    "prettier": "^2.2.1",
+    "ts-node": "8.1.0",
+    "ts-node-dev": "^1.0.0-pre.43",
+    "tsc-watch": "2.2.1",
+    "tsconfig-paths": "3.8.0",
+    "typescript": "^4.2.4",
+    "typescript-eslint": "0.0.1-alpha.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
